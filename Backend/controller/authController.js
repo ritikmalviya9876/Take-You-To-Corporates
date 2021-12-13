@@ -85,7 +85,7 @@ const addDetails = asyncHandler(async (req, res) => {
 
       if (userNew) {
         res.json({
-          user: user,
+          user: userNew,
           id_token,
         });
       } else {

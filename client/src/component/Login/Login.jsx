@@ -59,13 +59,13 @@ const Login = ({ stateSeter }) => {
       });
   };
 
+  let bt = `Login With ${process.env.REACT_APP_INSTITUTION_NAME} Mail`;
   return (
     <Container>
       <h3 className="display-3">You are Not Logged In</h3>
-
       <GoogleLogin
         clientId={process.env.REACT_APP_GOOGLE_OAUTH_CLIENT_ID}
-        buttonText="Login With College Mail"
+        buttonText={bt}
         onSuccess={loginSuccess}
         onFailure={loginFail}
         redirectUri={process.env.REACT_APP_GOOGLE_OAUTH_REDIRECT_URI}
