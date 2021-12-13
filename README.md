@@ -28,12 +28,13 @@ cd Backend
 npm install
 npm run dev
 ```
- Run forntend with command
+ Run frontend with command
 ```bash
 cd client
 npm install
 npm start
 ```
+Add .env file with own credentials
  
 <h2> Built with  </h2>
 <ul>
